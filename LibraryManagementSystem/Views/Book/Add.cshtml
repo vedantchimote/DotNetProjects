@@ -1,0 +1,24 @@
+﻿@* @model Library.Models.AddEmployeeViewModel *@
+@model Library.Models.UpdateBookViewModel
+
+
+<h1>Add Book</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="BName">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Author</label>
+        <input type="text" class="form-control" asp-for="Author">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Category</label>
+        <input type="text" class="form-control" asp-for="Category">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Price</label>
+        <input type="number" class="form-control" asp-for="Price">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

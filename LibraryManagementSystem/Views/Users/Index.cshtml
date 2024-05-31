@@ -1,0 +1,31 @@
+﻿@model List<Library.Models.Domain.Users>
+
+<h1>Users</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Mobile No</th>
+        <th>Password</th>
+        <th>Role</th>
+        <th> </th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>@user.Id</td>
+            <td>@user.Username</td>
+            <td>@user.Email</td>
+            <td>@user.Mobile_no</td>
+            <td>@user.Password</td>
+            <td>@user.Role</td>
+            <td><a href="Users/View/@user.Id">View</a></td>
+        </tr>
+    }
+    </tbody>
+</table>
